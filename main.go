@@ -20,10 +20,10 @@ type Book struct {
         Image  string `json:"image"`
 }
 
-type Res struct {
-	Rows  []Book `json:"rows"`
-	Total int    `json:"total"`
-}
+#type Res struct {
+#	Rows  []Book `json:"rows"`
+#	Total int    `json:"total"`
+#}
 
 func list(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	cfg, err := config.LoadDefaultConfig(context.TODO())
